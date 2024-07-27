@@ -25,6 +25,9 @@ cd src/secret && ytmusicapi oauth
 Follow the instructions and this should create a "oauth.json" file.
 
 Step 3:
+place the "CLIENT_ID", "CLIENT_SECRET" and "REDIRECT_URL" into the .env file in src/secret.
+
+Step 4:
 run the spotify2yt.py file like so:
 ```bash
 python spotify2yt.py [SPOTIFY_PLAYLIST_LINK_HERE] [YOUTUBE_PLAYLIST_ID] 

@@ -20,7 +20,7 @@ pip install -r requirements.txt
 Step 2:
 run:
 ```bash
-cd secret && ytmusicapi oauth
+cd src/secret && ytmusicapi oauth
 ```
 Follow the instructions and this should create a "oauth.json" file.
 

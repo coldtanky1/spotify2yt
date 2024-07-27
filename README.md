@@ -1,4 +1,4 @@
-# Description
+# Spotify2YT
 A tool written in Python designed to convert a Spotify playlist into a Youtube Music playlist.
 
 # Requirements

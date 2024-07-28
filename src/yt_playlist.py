@@ -5,9 +5,8 @@ from ytmusicapi import YTMusic
 
 YTMusic = YTMusic("./secret/oauth.json")
 
-def get_link_and_add_to_playlist(*query: str, playlistId: str):
+def get_link_and_add_to_playlist(query: str, playlistId: str):
     # Get the videoIds.
-    query = ''.join(query)
     search_results = YTMusic.search(query)
 
     # Add to playlist.
@@ -16,6 +15,3 @@ def get_link_and_add_to_playlist(*query: str, playlistId: str):
         print({response.get('status')})
     except Exception as e:
         print("Error: ", e)
-
-
-c

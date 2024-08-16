@@ -19,13 +19,18 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=CLIENT_ID,
 def fetch_sp_pl(link: str):
     playlist_url = link
     playlist = sp.playlist(playlist_url)
+    song_data = []
 
     for name in playlist['tracks']['items']:
-        print("Song name: ", name['track']['name'])
-        print("Artist: ", name['track']['artists'][0]['name'])
+        song_name = name['track']['name']
+        artist = name['track']['artists'][0]['name']
+        song_data.append(f"{song_name} {artist}\n")
 
-        try:
-            os.mkdir(os.getcwd() + '/results/')
-        except FileExistsError:
-            with open(os.getcwd() + '/results/sp_result.txt', 'a') as f:
-                f.write(f"{name['track']['name'] + ' ' + name['track']['artists'][0]['name']}\n")
+    try:
+        os.mkdir(os.getcwd() + '/results/')
+    except FileExistsError:
+        pass
+
+    with open(os.getcwd() + '/results/sp_result.txt', 'w') as f:
+        f.writelines(song_data)
+     

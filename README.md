@@ -32,4 +32,4 @@ run the spotify2yt.py file like so:
 ```bash
 python spotify2yt.py -l [SPOTIFY_PLAYLIST_LINK_HERE] -i [YOUTUBE_PLAYLIST_ID]
 ```
-(Add a -a flag at the end if you wish to allow duplicates)
+(Add a '-a' flag at the end if you wish to allow duplicates)

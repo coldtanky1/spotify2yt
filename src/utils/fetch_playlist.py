@@ -33,4 +33,3 @@ def fetch_sp_pl(link: str):
 
     with open(os.getcwd() + '/results/sp_result.txt', 'w') as f:
         f.writelines(song_data)
-     

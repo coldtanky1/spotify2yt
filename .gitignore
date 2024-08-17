@@ -176,5 +176,6 @@ pyrightconfig.json
 # Testing stuff that doesn't need to be here :)
 secret/
 results/
+path.txt
 
 # End of https://www.toptal.com/developers/gitignore/api/python

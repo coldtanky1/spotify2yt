@@ -2,9 +2,10 @@
 A tool written in Python designed to convert a Spotify playlist into a Youtube Music playlist.
 
 # Requirements
-- ytmusicapi 
-- spotipy API 
-- python-dotenv 
+- ytmusicapi
+- yt-dlp
+- spotipy API
+- python-dotenv
 - spotify developer account (visit https://developers.spotify.com/)
 
 Once you have created a developer account for spotify, create a new app and get the CLIENT ID and SECRET.
@@ -32,4 +33,4 @@ run the spotify2yt.py file like so:
 ```bash
 python spotify2yt.py -l [SPOTIFY_PLAYLIST_LINK_HERE] -i [YOUTUBE_PLAYLIST_ID]
 ```
-(Add a -a flag at the end if you wish to allow duplicates)
+(Add a '-a' flag at the end if you wish to allow duplicates)
